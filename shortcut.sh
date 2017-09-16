@@ -27,13 +27,8 @@ then
   do
     echo "$key ${shortcuts[$key]}" >> $RCPATH
   done
-
-  echo $(pwd)
 # Use shortcut
 elif [ $1 ]
 then
   echo "${shortcuts[$1]}"
-else
-  echo $(pwd)
-#   printf "Usage:\n\tSet shortcut: sc <name> <path>\n\tGo to shortcut: sc <name>\n"
 fi
