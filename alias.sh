@@ -1,0 +1,3 @@
+function sc() {
+  cd "$(shortcut $@)"
+}
