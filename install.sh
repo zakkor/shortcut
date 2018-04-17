@@ -5,3 +5,4 @@ sudo chmod +x /usr/local/bin/shortcut
 
 # TODO: Add support for .bashrc
 cat alias.sh >> ~/.zshrc
+touch ~/.scrc
