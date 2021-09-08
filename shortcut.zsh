@@ -26,8 +26,6 @@ then
   # Empty out file
   : > $RCPATH
 
-  # echo ${shortcuts}
-
   # Write new shortcuts
   for key val in "${(@kv)shortcuts}"
   do
