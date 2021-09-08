@@ -3,9 +3,16 @@ Quickly make and use shortcuts in your shell for easy navigation
 
 ## Installation
 
-`sh install.sh` will put an executable `shortcut` in `/usr/local/bin`, and append a shell function called `sc` to your `.zshrc`.
 
-If you use bash, edit it to `.bashrc` in the install.sh script.
+### bash
+
+`sh install.sh`
+
+### zsh
+
+`zsh install.zsh`
+
+The installation commands will put an executable `shortcut` in `/usr/local/bin`, and append a shell function called `sc` to your `.bashrc` or `.zshrc`, respectively.
 
 ## Example usage
 

@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if [[ ! -d '/usr/local/bin' ]]; then
   sudo mkdir /usr/local/bin
 fi
-sudo cp ./shortcut.sh /usr/local/bin/shortcut
+sudo cp ./shortcut.zsh /usr/local/bin/shortcut
 sudo chmod +x /usr/local/bin/shortcut
 
-cat alias.sh >> ~/.bashrc
+cat alias.sh >> ~/.zshrc
 touch ~/.scrc
