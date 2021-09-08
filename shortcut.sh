@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 RCPATH="$HOME/.scrc"
 
@@ -14,7 +14,12 @@ done < $RCPATH
 if [ $2 ]
 then
   # Expand path
-  path=$(readlink -m $2)
+
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    path=$(readlink -m $2)
+  else
+    path=$(realpath -m $2)
+  fi
 
   # Set new shortcut
   shortcuts["$1"]=$path
