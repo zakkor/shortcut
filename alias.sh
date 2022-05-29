@@ -2,6 +2,9 @@ function sc() {
   if [ $2 ]
   then
     shortcut $1 $2
+  elif [ "$1" = "--list" ]
+  then
+    cat "$HOME/.scrc"
   elif [ $1 ]
   then
     cd "$(shortcut $1)"
