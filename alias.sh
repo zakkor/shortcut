@@ -9,6 +9,6 @@ function sc() {
   then
     cd "$(shortcut $1)"
   else
-    printf "Usage:\n\tSet shortcut: sc <name> <path>\n\tGo to shortcut: sc <name>\n"
+    printf "Usage:\n\tSet shortcut: sc <name> <path>\n\tGo to shortcut: sc <name>\n\tList all existing shortcuts: sc --list\n"
   fi
 }
